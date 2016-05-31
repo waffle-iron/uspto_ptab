@@ -106,7 +106,7 @@ module.exports = function(app) {
         }
         //var SEARCH_URL= config.solrURI+'/oafiledatanew/select?q='+q+'&wt=csv&indent=falue&rows=100&start='+s+'&hl=false&hl.snippets=5&hl.fl=textdata&hl.fragsize=200&hl.simple.pre=<code>&hl.simple.post=</code>&hl.usePhraseHighlighter=true&q.op=AND&fl=appid,action_type,filename,minread,id,textdata';
 
-        var SEARCH_URL= config.solrURI+'/oafiledatanew/select?q='+q+'&wt=csv&indent=falue&rows=100&start='+s+'&hl=false&hl.snippets=5&hl.fl=textdata&hl.fragsize=200&hl.simple.pre=<code>&hl.simple.post=</code>&hl.usePhraseHighlighter=true&q.op=AND';
+        var SEARCH_URL= config.solrURI+'/'+req.query.dataset+'/select?q='+q+'&wt=csv&indent=falue&rows=100&start='+s+'&hl=false&hl.snippets=5&hl.fl=textdata&hl.fragsize=200&hl.simple.pre=<code>&hl.simple.post=</code>&hl.usePhraseHighlighter=true&q.op=AND';
 	if (req.query.dataset == 'oafiledatanew'){
             SEARCH_URL += '&fl=appid,action_type,filename,minread,id,textdata';
         }else if (req.query.dataset == 'ptab'){
