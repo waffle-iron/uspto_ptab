@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/CommerceDataService/uspto_ptab.png?label=ready&title=Ready)](https://waffle.io/CommerceDataService/uspto_ptab)
 # uspto_ptab
 This is a set of scripts to download Patent Trials and Appeals Board data, munge, and load into a Solr instance.
 
